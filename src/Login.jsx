@@ -12,7 +12,7 @@ function Login() {
     let navigate = useNavigate();
 
     let loginCheck = () => {
-        if (username.current.value === "Shiva" && password.current.value === "Shiva@123") {
+        if (username.current.value === "sam" && password.current.value === "sam@123") {
             dispatch(login(username.current.value));
             navigate("/home");
         } else {
