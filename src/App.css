@@ -1,9 +1,12 @@
 body{
   text-align: center;
+  background-color: #f4f4f9; /* Light Gray Background */
+  font-family: Arial, sans-serif;
 }
+
 /* Navigation bar styles */
 .navbar {
-  background-color: #001580; /* Dark Red */
+  background-color: #00274D; /* Deep Blue */
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -15,20 +18,22 @@ body{
   left: 0;
   z-index: 1000;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation links */
 .nav-link {
-  color: #ff0000; /* Bright Red */
+  color: #FFD700; /* Gold */
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
   margin: 0 5px;
   text-align: center;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-  background-color: #b30000; /* Darker Red */
+  background-color: #004B87; /* Lighter Blue */
   border-radius: 6px;
   transition: 0.3s ease-in-out;
   color: #ffffff; /* White text on hover */
@@ -36,8 +41,8 @@ body{
 
 /* Cart count */
 .cart-count {
-  background-color: #ffcc00; /* Yellow */
-  color: black;
+  background-color: #FFA500; /* Orange */
+  color: white;
   padding: 4px 8px;
   border-radius: 50%;
   font-size: 14px;
@@ -46,14 +51,14 @@ body{
 
 /* Welcome message */
 .welcome-text {
-  color: #ff0000; /* Bright Red */
+  color: #FFD700; /* Gold */
   font-weight: bold;
   margin-right: 15px;
 }
 
 /* Logout button */
 .logout-btn {
-  background-color: #ff0000; /* Bright Red */
+  background-color: #D32F2F; /* Crimson Red */
   color: white;
   border: none;
   padding: 8px 14px;
@@ -61,10 +66,11 @@ body{
   border-radius: 6px;
   margin-left: 10px;
   text-align: center;
+  font-weight: bold;
 }
 
 .logout-btn:hover {
-  background-color: #990000; /* Darker Red */
+  background-color: #B71C1C; /* Darker Red */
   transition: 0.3s;
 }
 
@@ -76,7 +82,7 @@ body{
 
 /* Main Heading */
 h1 {
-  color: #ff0000; /* Bright Red */
+  color: #00274D; /* Deep Blue */
   font-size: 28px;
   margin-top: 20px;
   text-align: center;
@@ -100,8 +106,10 @@ h1 {
     text-align: center;
   }
 }
+
+/* Div Styling */
 .divs{
   text-align: center;
   width: 100%;
-  margin-left: 300px;
+  margin-left: 0; /* Centering it fully */
 }
