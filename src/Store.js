@@ -16,21 +16,25 @@ const productsSlice = createSlice({
             { name: 'BitterGaurd', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.F5T7VfUkGNw7V7EgkSLsrwHaD3&pid=Api&P=0&h=180"}, 
         ],
         nonVeg: [
-            { name: 'chicken-65', price: 200.5 ,image:"https://react-repository-liard.vercel.app/Chicken-65.jpg"},
-            { name: 'Fish-Fry', price: 100.8 ,image:"https://react-repository-liard.vercel.app/fishfry.jpeg"},
-            { name: 'Biryani', price: 150.8 ,image:"https://react-repository-liard.vercel.app/biryani.jpg"},
-            { name: 'Chicken-lolipop', price: 150.8 ,image:"https://react-repository-liard.vercel.app/chickenlolipop.jpeg"},
-            { name: 'Egg-rice', price: 150.8 ,image:"https://react-repository-liard.vercel.app/eggrice.jpg"},
-            { name: 'Prawns', price: 150.8 ,image:"https://react-repository-liard.vercel.app/Prawngralic.jpg"}
+            { name: 'chicken-65', price: 200.5 ,image:"https://tse2.mm.bing.net/th?id=OIP.PVuUzNdXnMDyA5QFOydFlwHaEK&pid=Api&P=0&h=180"},
+            { name: 'Fish-Fry', price: 100.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.Utz-BhMyLk1FzUaqx3nilgHaHa&pid=Api&P=0&h=180"},
+            { name: 'Biryani', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.RzJfmrSX00YO7lRLmf7GiAHaE8&pid=Api&P=0&h=180"},
+            { name: 'Chicken-lolipop', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.JPqhOa2yWScL4xERS-DPUgHaIH&pid=Api&P=0&h=180"},
+            { name: 'Egg-rice', price: 150.8 ,image:"https://thefoodietakesflight.com/wp-content/uploads/2021/08/Easy-Vegan-Soy-Sauce-Egg-Fried-Rice-Recipe-8-of-24.jpg"},
+            { name: 'Prawns', price: 150.8 ,image:"https://tse2.mm.bing.net/th?id=OIP.RY3kKMMz9HW7xltludKTeAHaE8&pid=Api&P=0&h=180"},
+            { name: 'Tuna-Fish', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.ij4Az0ynCSPQAiiC03_B5AHaD1&pid=Api&P=0&h=180"},
+            { name: 'Mutton', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.tWalUWrEPWfd4J7oDUiZPgHaFR&pid=Api&P=0&h=180"},
+            { name: 'Pork', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.d1I5yjX-mJhdUfVPtESljwHaE8&pid=Api&P=0&h=180"},
+            { name: 'Lamb', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.I3eqIWB7xpZ3w4JwCET8WQHaD_&pid=Api&P=0&h=180"}
         ],
         milk: [
-            { name: 'Jelabi', price: 50.5 ,image:"https://react-repository-liard.vercel.app/jalebi.jpeg"},
-            { name: 'Gulab - Jamun', price: 80.8 ,image:"https://react-repository-liard.vercel.app/jamun.jpeg"},
-            { name: 'Rasgulla', price: 150 ,image:"https://react-repository-liard.vercel.app/Rasgulla.webp"},
-            { name: 'Rasmalai', price: 150.8 ,image:"https://react-repository-liard.vercel.app/rasmalai.jpg"},
-            { name: 'Motichoor-Laddoo', price: 150.8 ,image:"https://react-repository-liard.vercel.app/Motichoor.jpg"},
-            { name: 'Kalakand', price: 150.8 ,image:"https://react-repository-liard.vercel.app/kalakand.jpeg"},
-            { name: 'Doodh-Mithi-Fini', price: 150.8 ,image:"https://react-repository-liard.vercel.app/mithifini.webp"}
+            { name: 'Jelabi', price: 50.5 ,image:"https://tse2.mm.bing.net/th?id=OIP.ALNVrDctDELKjmqSe9uniQHaFh&pid=Api&P=0&h=180"},
+            { name: 'Gulab-Jamun', price: 80.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.nTBxcq-XpKASURFqCg__bAHaHa&pid=Api&P=0&h=180"},
+            { name: 'Rasgulla', price: 150 ,image:"https://tse1.mm.bing.net/th?id=OIP.LZBb3ayeVGrl6aE_4FBH6wHaLH&pid=Api&P=0&h=180"},
+            { name: 'Rasmalai', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.9fhCy5FZcUbfl6QPli-mmQHaE8&pid=Api&P=0&h=180"},
+            { name: 'Double-ka-meta', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.h5Azz6kDFK_DR0ZG4IxVKQHaEg&pid=Api&P=0&h=180"},
+            { name: 'Cham-cham', price: 150.8 ,image:"https://tse2.mm.bing.net/th?id=OIP.K1VlJHwCr3QtdiVnctKUogHaEK&pid=Api&P=0&h=180"},
+            { name: 'Ice cream', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.TcQ0vEAye_t8lWFhKNopQQHaEo&pid=Api&P=0&h=180"}
         ]
     },
     reducers: {}
