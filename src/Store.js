@@ -1,6 +1,4 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
-import Login from "./Login";
-import "./App.css";
 
 
 // Product Slice
@@ -8,22 +6,31 @@ const productsSlice = createSlice({
     name: 'products',
     initialState: {
         veg: [
-            { name: 'tomato', price: 200.5 },
-            { name: 'potato', price: 100.8 },
-            { name: 'carrot', price: 150.8 },
-            { name: 'paneer', price: 150.8 }
+            { name: 'MushRoom', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.M4vr-t_PxdlTvg6zdVHbDQHaE9&pid=Api&P=0&h=180"},
+            { name: 'Tomato', price: 200.5 ,image: "https://tse3.mm.bing.net/th?id=OIP.VLq0kRvM53MGoT7XMmwLOwHaE8&pid=Api&P=0&h=180" },
+            { name: 'Potato', price: 100.8 , image:"https://tse3.mm.bing.net/th?id=OIP.xdxwjQ_mSva9hgccLToezgHaE9&pid=Api&P=0&h=180"},
+            { name: 'Carrot', price: 150.8 , image:"https://tse3.mm.bing.net/th?id=OIP.h8ISIodUaQRtSBU06KkvPwHaGr&pid=Api&P=0&h=180"},
+            { name: 'Onion', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.VX-fRronTA0KV1puV3fvkAHaE8&pid=Api&P=0&h=180"},
+            { name: 'Brinjal', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.v9xh2rnmlG2WClFbCLrU8AHaHa&pid=Api&P=0&h=180"},
+            { name: 'Peas', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.SqG26vx3PHnNfi8jevF9JgHaEo&pid=Api&P=0&h=180"},
+            { name: 'BitterGaurd', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.F5T7VfUkGNw7V7EgkSLsrwHaD3&pid=Api&P=0&h=180"}, 
         ],
         nonVeg: [
-            { name: 'chicken', price: 200.5 },
-            { name: 'mutton', price: 100.8 },
-            { name: 'prawns', price: 150.8 },
-            { name: 'fish', price: 150.8 }
+            { name: 'chicken-65', price: 200.5 ,image:"https://react-repository-liard.vercel.app/Chicken-65.jpg"},
+            { name: 'Fish-Fry', price: 100.8 ,image:"https://react-repository-liard.vercel.app/fishfry.jpeg"},
+            { name: 'Biryani', price: 150.8 ,image:"https://react-repository-liard.vercel.app/biryani.jpg"},
+            { name: 'Chicken-lolipop', price: 150.8 ,image:"https://react-repository-liard.vercel.app/chickenlolipop.jpeg"},
+            { name: 'Egg-rice', price: 150.8 ,image:"https://react-repository-liard.vercel.app/eggrice.jpg"},
+            { name: 'Prawns', price: 150.8 ,image:"https://react-repository-liard.vercel.app/Prawngralic.jpg"}
         ],
         milk: [
-            { name: 'Jersey', price: 200.5 },
-            { name: 'Heritage', price: 100.8 },
-            { name: 'Dodla', price: 150 },
-            { name: 'Hatsun', price: 150.8 }
+            { name: 'Jelabi', price: 50.5 ,image:"https://react-repository-liard.vercel.app/jalebi.jpeg"},
+            { name: 'Gulab - Jamun', price: 80.8 ,image:"https://react-repository-liard.vercel.app/jamun.jpeg"},
+            { name: 'Rasgulla', price: 150 ,image:"https://react-repository-liard.vercel.app/Rasgulla.webp"},
+            { name: 'Rasmalai', price: 150.8 ,image:"https://react-repository-liard.vercel.app/rasmalai.jpg"},
+            { name: 'Motichoor-Laddoo', price: 150.8 ,image:"https://react-repository-liard.vercel.app/Motichoor.jpg"},
+            { name: 'Kalakand', price: 150.8 ,image:"https://react-repository-liard.vercel.app/kalakand.jpeg"},
+            { name: 'Doodh-Mithi-Fini', price: 150.8 ,image:"https://react-repository-liard.vercel.app/mithifini.webp"}
         ]
     },
     reducers: {}
