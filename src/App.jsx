@@ -2,8 +2,9 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { 
-    faUtensils, faCarrot, faDrumstickBite, faIceCream, 
+    faUtensils, faCarrot, faDrumstickBite, faDroplet, 
     faShoppingCart, faClipboardList, faPhone, faInfoCircle, 
     faUserCircle, faSignOutAlt, faSignInAlt, faStore 
 } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +17,7 @@ import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
 import Home from "./Home";
 import Milk from "./Milk";
-import { logout } from "./Store";
+import { logout } from "./Store";  // ✅ Ensure the correct path
 import Login from "./Login";
 import NotFound from "./NotFound";
 import "./App.css";
@@ -60,7 +61,7 @@ function App() {
                             </li>
                             <li className="nav-item">
                                 <Link to="/milk" className="nav-link text-light" onClick={() => setIsOpen(false)}>
-                                    <FontAwesomeIcon icon={faIceCream} className="me-2" /> Desserts
+                                    <FontAwesomeIcon icon={faDroplet} className="me-2" /> Milk
                                 </Link>
                             </li>
                             <li className="nav-item">

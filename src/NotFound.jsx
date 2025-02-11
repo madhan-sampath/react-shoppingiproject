@@ -15,7 +15,7 @@ function NotFound() {
             <div>
                 {/* <h1 className="display-4 text-danger mb-4">404 - Page Not Found</h1> */}
                 <img 
-                    src="https://tse1.mm.bing.net/th?id=OIP.3_D6Cl2xR5Fc202Yh4k5FQHaE9&pid=Api&P=0&h=180" 
+                    src="https://deep-image.ai/blog/content/images/size/w1000/2024/04/e8b03cd2-bbf1-4153-9e33-403a2e0f8ea3-generated.png" 
                     alt="404 Error"
                     className="img-fluid mb-4" 
                     style={{ maxWidth: '80%', height: 'auto' }} 

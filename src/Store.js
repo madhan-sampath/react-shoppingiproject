@@ -28,13 +28,14 @@ const productsSlice = createSlice({
             { name: 'Lamb', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.I3eqIWB7xpZ3w4JwCET8WQHaD_&pid=Api&P=0&h=180"}
         ],
         milk: [
-            { name: 'Jelabi', price: 50.5 ,image:"https://tse2.mm.bing.net/th?id=OIP.ALNVrDctDELKjmqSe9uniQHaFh&pid=Api&P=0&h=180"},
-            { name: 'Gulab-Jamun', price: 80.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.nTBxcq-XpKASURFqCg__bAHaHa&pid=Api&P=0&h=180"},
-            { name: 'Rasgulla', price: 150 ,image:"https://tse1.mm.bing.net/th?id=OIP.LZBb3ayeVGrl6aE_4FBH6wHaLH&pid=Api&P=0&h=180"},
-            { name: 'Rasmalai', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.9fhCy5FZcUbfl6QPli-mmQHaE8&pid=Api&P=0&h=180"},
-            { name: 'Double-ka-meta', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.h5Azz6kDFK_DR0ZG4IxVKQHaEg&pid=Api&P=0&h=180"},
-            { name: 'Cham-cham', price: 150.8 ,image:"https://tse2.mm.bing.net/th?id=OIP.K1VlJHwCr3QtdiVnctKUogHaEK&pid=Api&P=0&h=180"},
-            { name: 'Ice cream', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.TcQ0vEAye_t8lWFhKNopQQHaEo&pid=Api&P=0&h=180"}
+            { name: 'Jersy Milk', price: 50.5 ,image:"https://godrejjersey.azurewebsites.net/s3/products/a2d181824555999af963c12.png"},
+            { name: 'paneer', price: 800.8 ,image:"https://healthynibblesandbits.com/wp-content/uploads/2018/10/How-to-Make-Paneer-10.jpg"},
+            { name: 'Butter', price: 200 ,image:"https://cdn-jjcgb.nitrocdn.com/qCWRNWpLzZyEXGBZmEKXpSZwWTMmIhSo/assets/images/optimized/rev-3e5f764/www.ariyancorp.com/wp-content/uploads/2020/04/Blended-Butter-1024x683.jpg"},
+            { name: 'Ghee', price: 600.8 ,image:"https://sitarafoods.com/wp-content/uploads/2022/07/01-8-1.jpg"},
+            { name: 'Cheese', price: 400.3 ,image:"https://fhafnb.com/wp-content/uploads/2023/09/swiss-cheese.jpg"},
+            { name: 'Kharvas', price: 500.2 ,image:"https://madhurasrecipe.com/wp-content/uploads/2020/10/Kharvas-Marathi-Recipe.jpg"},
+            { name: 'Yogurt', price: 150.8 ,image:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Turkish_strained_yogurt.jpg/330px-Turkish_strained_yogurt.jpg"},
+            { name: 'Curd', price: 40.0 ,image:"https://vanitascorner.com/wp-content/uploads/2019/06/Making-curd.jpg"},
         ]
     },
     reducers: {}
