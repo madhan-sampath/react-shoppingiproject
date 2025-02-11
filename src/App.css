@@ -6,7 +6,7 @@ body{
 
 /* Navigation bar styles */
 .navbar {
-  background-color: #00274D; /* Deep Blue */
+  background-color: #1E3A8A; /* Darker Blue */ /* Deep Blue */
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ body{
 
 /* Navigation links */
 .nav-link {
-  color: #FFD700; /* Gold */
+  color: #4CAF50; /* Green */ /* Gold */
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
@@ -36,13 +36,13 @@ body{
   background-color: #004B87; /* Lighter Blue */
   border-radius: 6px;
   transition: 0.3s ease-in-out;
-  color: #ffffff; /* White text on hover */
+  color: #E0E0E0; /* Light Gray */ /* White text on hover */
 }
 
 /* Cart count */
 .cart-count {
   background-color: #FFA500; /* Orange */
-  color: white;
+  color: #F0F0F0; /* Off White */
   padding: 4px 8px;
   border-radius: 50%;
   font-size: 14px;
@@ -51,7 +51,7 @@ body{
 
 /* Welcome message */
 .welcome-text {
-  color: #FFD700; /* Gold */
+  color: #4CAF50; /* Green */ /* Gold */
   font-weight: bold;
   margin-right: 15px;
 }
@@ -59,7 +59,7 @@ body{
 /* Logout button */
 .logout-btn {
   background-color: #D32F2F; /* Crimson Red */
-  color: white;
+  color: #F0F0F0; /* Off White */
   border: none;
   padding: 8px 14px;
   cursor: pointer;
@@ -82,7 +82,7 @@ body{
 
 /* Main Heading */
 h1 {
-  color: #00274D; /* Deep Blue */
+  color: #1E3A8A; /* Darker Blue */ /* Deep Blue */
   font-size: 28px;
   margin-top: 20px;
   text-align: center;
