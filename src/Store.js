@@ -6,12 +6,12 @@ const productsSlice = createSlice({
     name: 'products',
     initialState: {
         veg: [
-            { name: 'MushRoom', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.M4vr-t_PxdlTvg6zdVHbDQHaE9&pid=Api&P=0&h=180"},
+            { name: 'MushRoom', price: 150.8 ,image:"https://www.jiomart.com/images/product/original/590000245/button-mushroom-200-g-product-images-o590000245-p590000245-1-202408070949.jpg?im=Resize=(420,420)"},
             { name: 'Tomato', price: 200.5 ,image: "https://tse3.mm.bing.net/th?id=OIP.VLq0kRvM53MGoT7XMmwLOwHaE8&pid=Api&P=0&h=180" },
             { name: 'Potato', price: 100.8 , image:"https://tse3.mm.bing.net/th?id=OIP.xdxwjQ_mSva9hgccLToezgHaE9&pid=Api&P=0&h=180"},
             { name: 'Carrot', price: 150.8 , image:"https://tse3.mm.bing.net/th?id=OIP.h8ISIodUaQRtSBU06KkvPwHaGr&pid=Api&P=0&h=180"},
-            { name: 'Onion', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.VX-fRronTA0KV1puV3fvkAHaE8&pid=Api&P=0&h=180"},
-            { name: 'Brinjal', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.v9xh2rnmlG2WClFbCLrU8AHaHa&pid=Api&P=0&h=180"},
+            { name: 'Onion', price: 150.8 ,image:"https://organicmandya.com/cdn/shop/files/SpringOnion.jpg?v=1721375462&width=1000"},
+            { name: 'Brinjal', price: 150.8 ,image:"https://www.allthatgrows.in/cdn/shop/products/Brinjal-Long.jpg?v=1598078913"},
             { name: 'Peas', price: 150.8 ,image:"https://tse4.mm.bing.net/th?id=OIP.SqG26vx3PHnNfi8jevF9JgHaEo&pid=Api&P=0&h=180"},
             { name: 'BitterGaurd', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.F5T7VfUkGNw7V7EgkSLsrwHaD3&pid=Api&P=0&h=180"}, 
         ],
@@ -21,10 +21,9 @@ const productsSlice = createSlice({
             { name: 'Biryani', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.RzJfmrSX00YO7lRLmf7GiAHaE8&pid=Api&P=0&h=180"},
             { name: 'Chicken-lolipop', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.JPqhOa2yWScL4xERS-DPUgHaIH&pid=Api&P=0&h=180"},
             { name: 'Egg-rice', price: 150.8 ,image:"https://thefoodietakesflight.com/wp-content/uploads/2021/08/Easy-Vegan-Soy-Sauce-Egg-Fried-Rice-Recipe-8-of-24.jpg"},
-            { name: 'Prawns', price: 150.8 ,image:"https://tse2.mm.bing.net/th?id=OIP.RY3kKMMz9HW7xltludKTeAHaE8&pid=Api&P=0&h=180"},
-            { name: 'Tuna-Fish', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.ij4Az0ynCSPQAiiC03_B5AHaD1&pid=Api&P=0&h=180"},
+            { name: 'Prawns', price: 150.8 ,image:"https://5.imimg.com/data5/IR/TQ/UN/SELLER-7232341/prawns-cleand-pd-.jpg"},
+            { name: 'Tuna-Fish', price: 150.8 ,image:"https://media.istockphoto.com/id/1301917262/photo/fresh-tuna-fish-fillet-steaks-garnished-with-parsley-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=tJMZC7tI0VOChyIS8fB-Jh0G91e8wO2UAT7ejGr1Djg="},
             { name: 'Mutton', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.tWalUWrEPWfd4J7oDUiZPgHaFR&pid=Api&P=0&h=180"},
-            { name: 'Pork', price: 150.8 ,image:"https://tse3.mm.bing.net/th?id=OIP.d1I5yjX-mJhdUfVPtESljwHaE8&pid=Api&P=0&h=180"},
             { name: 'Lamb', price: 150.8 ,image:"https://tse1.mm.bing.net/th?id=OIP.I3eqIWB7xpZ3w4JwCET8WQHaD_&pid=Api&P=0&h=180"}
         ],
         milk: [

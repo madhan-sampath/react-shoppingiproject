@@ -17,7 +17,7 @@ import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
 import Home from "./Home";
 import Milk from "./Milk";
-import { logout } from "./Store";  // ✅ Ensure the correct path
+import { logout } from "./Store";
 import Login from "./Login";
 import NotFound from "./NotFound";
 import "./App.css";
@@ -33,9 +33,9 @@ function App() {
 
     return (
         <BrowserRouter>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <Link to="/home" className="navbar-brand text-light">
+                    <Link to="/home" className="navbar-brand text-dark">
                         <FontAwesomeIcon icon={faUtensils} className="me-2" /> Store
                     </Link>
 
@@ -50,42 +50,42 @@ function App() {
                     <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <Link to="/veg" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/veg" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faCarrot} className="me-2" /> Veg-Items
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/nonveg" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/nonveg" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faDrumstickBite} className="me-2" /> Non-Veg
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/milk" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/milk" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faDroplet} className="me-2" /> Milk
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/cart" className="nav-link text-light position-relative" onClick={() => setIsOpen(false)}>
+                                <Link to="/cart" className="nav-link text-dark position-relative" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faShoppingCart} className="fa-lg me-2" />
                                     {totalItems > 0 && (
-                                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-light">
                                             {totalItems}
                                         </span>
                                     )}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/orders" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/orders" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faClipboardList} className="me-2" /> Orders
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contactus" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/contactus" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faPhone} className="me-2" /> Contact Us
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/aboutus" className="nav-link text-light" onClick={() => setIsOpen(false)}>
+                                <Link to="/aboutus" className="nav-link text-dark" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faInfoCircle} className="me-2" /> About Us
                                 </Link>
                             </li>
@@ -93,11 +93,11 @@ function App() {
                         <div className="d-flex">
                             {isAuthenticated ? (
                                 <>
-                                    <span className="navbar-text text-light me-3">
+                                    <span className="navbar-text text-dark me-3">
                                         <FontAwesomeIcon icon={faUserCircle} className="me-1" /> Welcome, {user || "Guest"}!
                                     </span>
                                     <button
-                                        className="btn btn-danger"
+                                        className="btn btn-secondary"
                                         onClick={() => {
                                             dispatch(logout());
                                             setIsOpen(false);
@@ -107,7 +107,7 @@ function App() {
                                     </button>
                                 </>
                             ) : (
-                                <Link to="/login" className="btn btn-success" onClick={() => setIsOpen(false)}>
+                                <Link to="/login" className="btn btn-primary" onClick={() => setIsOpen(false)}>
                                     <FontAwesomeIcon icon={faSignInAlt} className="me-2" /> Sign In
                                 </Link>
                             )}
@@ -117,7 +117,7 @@ function App() {
             </nav>
 
             <div className="container mt-4">
-                <h1 className="text-center text-primary">
+                <h1 className="text-center text-success">
                     <FontAwesomeIcon icon={faStore} className="me-2" /> Welcome to Our Store
                 </h1>
                 <Routes>
