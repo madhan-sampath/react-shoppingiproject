@@ -49,9 +49,11 @@ function Cart() {
 
     return (
         <div className="container mt-5">
-            <h1 className="text-center mb-4">
-                <i className="fas fa-shopping-cart me-2"></i> Shopping Cart
-            </h1>
+            <header className="text-center mb-4">
+                <h1>
+                    <i className="fas fa-shopping-cart me-2"></i> Shopping Cart
+                </h1>
+            </header>
 
             {cartObject.length > 0 ? (
                 <div className="row">
@@ -60,22 +62,24 @@ function Cart() {
                             {cartObject.map((item, index) => (
                                 <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
                                     <div className="d-flex align-items-center">
-                                        <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px', marginRight: '10px' }} />
-                                        <div className="fw-bold">
-                                            <span style={{ display: 'inline-block' }}>{item.name}</span> -
-                                            <span style={{ display: 'inline-block' }}>₹{item.price}</span>
-                                            <span className="text-muted ms-2" style={{ display: 'inline-block' }}> (Qty: {item.quantity})</span>
+                                        <img src={item.image} alt={item.name} style={{ width: '60px', height: '60px', marginRight: '15px', borderRadius: '8px' }} />
+                                        <div>
+                                            <div className="fw-bold">{item.name}</div>
+                                            <div className="text-muted">₹{item.price}</div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <button className="btn btn-success btn-sm me-1" onClick={() => dispatch(increament(item))}>
-                                            <i className="fas fa-plus-circle"></i>
-                                        </button>
-                                        <button className="btn btn-warning btn-sm me-1" onClick={() => dispatch(decreament(item))}>
-                                            <i className="fas fa-minus-circle"></i>
-                                        </button>
+                                    <div className="d-flex align-items-center">
+                                        <div className="me-3">
+                                            <button className="btn btn-warning btn-sm me-1" onClick={() => dispatch(decreament(item))}>
+                                                <i className="fas fa-minus"></i>
+                                            </button>
+                                            <span className="mx-2">{item.quantity}</span>
+                                            <button className="btn btn-success btn-sm me-1" onClick={() => dispatch(increament(item))}>
+                                                <i className="fas fa-plus"></i>
+                                            </button>
+                                        </div>
                                         <button className="btn btn-danger btn-sm" onClick={() => dispatch(remove(item))}>
-                                            <i className="fas fa-trash-alt"></i>
+                                            <i className="fas fa-trash"></i>
                                         </button>
                                     </div>
                                 </li>
@@ -84,17 +88,26 @@ function Cart() {
                     </div>
 
                     <div className="col-lg-4">
-                        <div className="card shadow-sm p-4">
+                        <aside className="card shadow-sm p-4">
                             <h4 className="mb-3 text-center">Order Summary</h4>
-                            <p className="fw-bold"><span style={{ display: 'inline-block' }}>Total Price:</span> <span style={{ display: 'inline-block' }}>₹{totalAmount.toFixed(2)}</span></p>
+                            <div className="d-flex justify-content-between align-items-center mb-2">
+                                <span className="fw-bold">Total Price:</span>
+                                <span>₹{totalAmount.toFixed(2)}</span>
+                            </div>
 
                             {showDiscount && (
-                                <p className="text-success"><span style={{ display: 'inline-block' }}>Discount ({discountPercentage}%):</span> <span style={{ display: 'inline-block' }}>-₹{discountAmount.toFixed(2)}</span></p>
+                                <div className="d-flex justify-content-between align-items-center mb-2 text-success">
+                                    <span>Discount ({discountPercentage}%):</span>
+                                    <span>-₹{discountAmount.toFixed(2)}</span>
+                                </div>
                             )}
 
-                            <p className="fw-bold"><span style={{ display: 'inline-block' }}>Net Amount:</span> <span style={{ display: 'inline-block' }}>₹{finalAmount.toFixed(2)}</span></p>
+                            <div className="d-flex justify-content-between align-items-center mb-3">
+                                <span className="fw-bold">Net Amount:</span>
+                                <span>₹{finalAmount.toFixed(2)}</span>
+                            </div>
 
-                            <div className="d-flex justify-content-between mb-3">
+                            <div className="d-grid gap-2 mb-3">
                                 <button className="btn btn-outline-primary btn-sm" onClick={() => { setDiscountPercentage(10); setShowDiscount(true); }}>
                                     <i className="fas fa-percent me-2"></i> 10% Off
                                 </button>
@@ -124,16 +137,16 @@ function Cart() {
 
                             {showCoupon && (
                                 <div className="alert alert-success p-2">
-                                    <p className="mb-1"><span style={{ display: 'inline-block' }}>Coupon Applied:</span> <strong>{couponCode}</strong></p>
-                                    <p className="mb-1"><span style={{ display: 'inline-block' }}>Discount:</span> <span style={{ display: 'inline-block' }}>-₹{couponDiscountAmount.toFixed(2)}</span></p>
-                                    <p className="fw-bold"><span style={{ display: 'inline-block' }}>Final Payable:</span> <span style={{ display: 'inline-block' }}>₹{finalAmountWithCoupon.toFixed(2)}</span></p>
+                                    <p className="mb-1">Coupon Applied: <strong>{couponCode}</strong></p>
+                                    <p className="mb-1">Discount: -₹{couponDiscountAmount.toFixed(2)}</p>
+                                    <p className="fw-bold">Final Payable: ₹{finalAmountWithCoupon.toFixed(2)}</p>
                                 </div>
                             )}
 
                             <button className="btn btn-success w-100" onClick={handlePurchageDetails}>
                                 <i className="fas fa-check-circle me-2"></i> Complete Purchase
                             </button>
-                        </div>
+                        </aside>
                     </div>
                 </div>
             ) : (

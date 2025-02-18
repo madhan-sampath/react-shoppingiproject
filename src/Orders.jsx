@@ -17,43 +17,27 @@ function Orders() {
                     <i className="fas fa-info-circle me-2"></i> No Orders Yet
                 </div>
             ) : (
-                <div className="row"> {/* Basic row */}
+                <div className="d-flex flex-wrap justify-content-center gap-3"> 
                     {ordersObject.map((purchase, index) => (
-                        <div key={index} className="col-md-4 mb-4"> {/* Column for each order */}
-                            <div className="card shadow-lg border-light rounded">
-                                <div className="card-body">
-                                    <h5 className="card-title"> {/* Removed text-center */}
-                                        Order #{index + 1}
-                                    </h5>
-                                    <p> {/* Removed d-flex and align-items-center */}
-                                        <i className="fas fa-calendar-alt me-2"></i>
-                                        Date: {purchase.date}
-                                    </p>
-                                    <p> {/* Removed d-flex and align-items-center */}
-                                        <i className="fas fa-dollar-sign me-2"></i>
-                                        Total: ₹{purchase.totalAmount.toFixed(2)}
-                                    </p>
-                                    <p> {/* Removed d-flex and align-items-center */}
-                                        <i className="fas fa-box-open me-2"></i>
-                                        Items:
-                                    </p>
-                                    <ul className="list-group"> {/* Removed flex-grow-1 */}
-                                        {purchase.items.map((item, idx) => (
-                                            <li key={idx} className="list-group-item"> {/* Removed d-flex and align-items-center */}
-                                                <img
-                                                    src={item.image}
-                                                    alt={item.name}
-                                                    className="me-2 rounded"
-                                                    style={{ width: '50px', height: '50px', objectFit: 'cover' }}
-                                                />
-                                                <div className="item-details"> {/* No special styling */}
-                                                    <i className="fas fa-caret-right me-2"></i>
-                                                    {item.name} - {item.quantity} x ₹{item.price}
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                        <div key={index} className="card shadow-lg border-light rounded" style={{ width: '22rem' }}>
+                            <div className="card-body">
+                                <h5 className="card-title text-center">Order #{index + 1}</h5>
+                                <p><i className="fas fa-calendar-alt me-2"></i>Date: {purchase.date}</p>
+                                <p><i className="fas fa-dollar-sign me-2"></i>Total: ₹{purchase.totalAmount.toFixed(2)}</p>
+                                <p><i className="fas fa-box-open me-2"></i>Items:</p>
+                                <ul className="list-group">
+                                    {purchase.items.map((item, idx) => (
+                                        <li key={idx} className="list-group-item d-flex align-items-center">
+                                            <img
+                                                src={item.image}
+                                                alt={item.name}
+                                                className="me-3 rounded"
+                                                style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                                            />
+                                            <span>{item.name} - {item.quantity} x ₹{item.price}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     ))}
